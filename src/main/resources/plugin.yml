@@ -1,0 +1,4 @@
+name: PronounChoice
+version: '${version}'
+main: xyz.chaoscorner.pronounchoice.PronounChoice
+api-version: 1.18
