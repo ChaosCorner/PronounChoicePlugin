@@ -4,3 +4,44 @@ main: xyz.chaoscorner.pronounchoice.PronounChoice
 api-version: 1.18
 depend:
   - LuckPerms
+commands:
+  pronoun:
+    description: Manage pronouns for you or another user
+    usage: /<command> <addgroup|removegroup|set|remove|list|current|version>
+    aliases: pn
+permissions:
+  pronoun.admin:
+    default: op
+    description: All commands which manage pronouns
+    children:
+      pronoun.addgroup: true
+      pronoun.removegroup: true
+      pronoun.set.others: true
+      pronoun.remove.others: true
+  pronoun.addgroup:
+    description: Adds a pronoun group into LuckPerms
+  pronoun.removegroup:
+    description: Deletes a pronoun group in LuckPerms
+  pronoun.set.self:
+    default: true
+    description: Sets your pronouns
+  pronoun.set.others:
+    description: Sets another user's pronouns
+  pronoun.remove.self:
+    default: true
+    description: Removes your pronouns
+  pronoun.remove.others:
+    description: Removes another user's pronouns
+  pronoun.list:
+    default: true
+    description: Lists all available pronouns
+  pronoun.current.self:
+    default: true
+    description: Shows your current pronouns
+  pronoun.current.others:
+    default: true
+    description: Shows another user's current pronouns
+  pronoun.help:
+    default: true
+    description: Shows the current version and usage of the plugin
+
