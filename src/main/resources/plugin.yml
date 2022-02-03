@@ -10,9 +10,19 @@ commands:
     usage: /<command> <addgroup|removegroup|set|remove|list|current|version>
     aliases: pn
 permissions:
+  pronoun.user:
+    default: true
+    description: All the main commands
+    children:
+      pronoun.set.self: true
+      pronoun.remove.self: true
+      pronoun.help: true
+      pronoun.list: true
+      pronoun.current.self: true
+      pronoun.current.others: true
   pronoun.admin:
     default: op
-    description: All commands which manage pronouns
+    description: All admin commands which manage pronouns
     children:
       pronoun.addgroup: true
       pronoun.removegroup: true
@@ -23,25 +33,19 @@ permissions:
   pronoun.removegroup:
     description: Deletes a pronoun group in LuckPerms
   pronoun.set.self:
-    default: true
     description: Sets your pronouns
   pronoun.set.others:
     description: Sets another user's pronouns
   pronoun.remove.self:
-    default: true
     description: Removes your pronouns
   pronoun.remove.others:
     description: Removes another user's pronouns
   pronoun.list:
-    default: true
     description: Lists all available pronouns
   pronoun.current.self:
-    default: true
     description: Shows your current pronouns
   pronoun.current.others:
-    default: true
     description: Shows another user's current pronouns
   pronoun.help:
-    default: true
     description: Shows the current version and usage of the plugin
 
