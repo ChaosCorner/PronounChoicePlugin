@@ -25,6 +25,7 @@ dependencies {
     compileOnly "me.clip:placeholderapi:2.11.1"
     compileOnly "mysql:mysql-connector-java:8.0.28"
     compileOnly "com.j256.ormlite:ormlite-jdbc:6.1"
+    compileOnly "javax.persistence:javax.persistence-api:2.2"
 }
 
 def targetJavaVersion = 17
