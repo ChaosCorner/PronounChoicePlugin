@@ -20,14 +20,11 @@ repositories {
     }
 }
 
-def paperMcVersion = '1.18.1-R0.1-SNAPSHOT'
-def placeholderApiVersion = '2.11.1'
-def mysqlConnectorVersion = '8.0.28'
-
 dependencies {
-    compileOnly "io.papermc.paper:paper-api:${paperMcVersion}"
-    compileOnly "me.clip:placeholderapi:${placeholderApiVersion}"
-    compileOnly "mysql:mysql-connector-java:${mysqlConnectorVersion}"
+    compileOnly "io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT"
+    compileOnly "me.clip:placeholderapi:2.11.1"
+    compileOnly "mysql:mysql-connector-java:8.0.28"
+    compileOnly "com.j256.ormlite:ormlite-jdbc:6.1"
 }
 
 def targetJavaVersion = 17
