@@ -24,8 +24,8 @@ def paperMcVersion = '1.18.1-R0.1-SNAPSHOT'
 def placeholderApiVersion = '2.11.1'
 
 dependencies {
-    compileOnly 'io.papermc.paper:paper-api:${paperMcVersion}'
-    compileOnly 'me.clip:placeholderapi:${placeholderApiVersion}'
+    compileOnly "io.papermc.paper:paper-api:${paperMcVersion}"
+    compileOnly "me.clip:placeholderapi:${placeholderApiVersion}"
 }
 
 def targetJavaVersion = 17
